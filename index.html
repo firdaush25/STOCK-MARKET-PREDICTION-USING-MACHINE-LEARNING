@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Prediction Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+            border: 5px solid white;
+            border-radius: 40px;
+            background-color: gainsboro;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #tickerSelect {
+            border-radius: 40px;
+            padding: 10px;
+            margin: auto;
+            width: 12%;
+        }
+
+        .selection {
+            text-align: center;
+        }
+
+        #author {
+            text-align: center;
+        }
+
+        #metricsContainer {
+            padding: 20px;
+        }
+
+        #author {
+            margin-bottom: 5%;
+        }
+
+        #chartContainer {
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📊 Stock Market Prediction Dashboard</h1>
+    <h2>🏬 Choose Company</h2>
+
+
+    <div class="selection">
+        <select id="tickerSelect" onchange="renderChart()">
+            <option value="AAPL">AAPL 🍎</option>
+            <option value="MSFT">MSFT 🖥️</option>
+            <option value="TSLA">TSLA 🚘</option>
+            <option value="GOOGLE">GOOGLE 🌎</option>
+            <option value="AMAZON">AMAZON ⤻ͣmazon</option>
+            <option value="ZOOM">ZOOM 👨🏻‍💻</option>
+            <option value="UBER">UBER 🚖</option>
+            <option value="WALMART">WALMART 🛍️
+            </option>
+            <option value="NETFLIX">NETFLIX 🎬🍿</option>
+        </select>
+    </div><br>
+
+    <div id="chartContainer"></div>
+    <div id="metricsContainer"></div>
+    <div id="metricsSummary"></div>
+    <script src="scripts/dashboard.js">renderMetricsTable();</script>
+
+    <section id="author">
+        <h2>👨‍💻 Project Author</h2>
+        <p><strong>Name:</strong> Firdaush Alam</p>
+        <p><strong>Profession:</strong> Web Development</p>
+        <p><strong>Portfolio:</strong> <a href="https://firdaushalamportfolio.netlify.app/" target="_blank">🔗↗</a></p>
+        <p><strong>Github:</strong> <a href="https://github.com/firdaush25" target="_blank">🔗↗</a></p>
+    </section>
+</body>
+
+</html>
