@@ -53,20 +53,13 @@ A real-world time series forecasting system that predicts closing stock prices f
 ## 🚀 Getting Started
 
 1. Clone this repository
-2. Place `alldata.csv` and `multi_stock_lstm_model.h5` in the root directory
+2. Place `Raw_Data.csv` and `multi_stock_lstm_model.h5` in the root directory
 3. Run the main prediction script (`predict_and_export`)
 4. Evaluate performance via `evaluate_prediction_accuracy()`
 5. 👉 View it live: [https://stockmarketpredictionusinglstm.tiiny.site](https://stockmarketpredictionusinglstm.tiiny.site)
 
 ---
 
-## 📱 Quick Access
-
-Scan this QR code to open the live dashboard on your phone:
-
-![QR Code to Dashboard](./assets/dashboard_qr.png)
-
----
 
 ## 🧑‍💻 Author
 
@@ -94,4 +87,3 @@ Computer Science Engineering student at SECAB Institute of Engineering & Technol
 ## 📜 License
 
 This project is open-sourced for educational and portfolio use. For any commercial reuse, please contact the author directly.
-# STOCK-MARKET-PREDICTION-USING-MACHINE-LEARNING
